@@ -1,0 +1,128 @@
+/* 전체 화면 배경 및 폰트 설정 */
+.connected-container {
+  background: linear-gradient(to bottom, #ffffff, #add8f0);
+  min-height: 100vh;
+  font-family: sans-serif;
+  position: relative;
+  padding-top: 20px;
+}
+
+/* 상단 햄버거 메뉴 영역 */
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 연결 상태 및 이모지 영역 */
+.status-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.emoji-circle {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.connection-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.battery-icon {
+  font-size: 18px;
+}
+
+.connected-text {
+  color: limegreen;
+  font-weight: bold;
+}
+
+/* 번역 박스 */
+.translation-box {
+  background: white;
+  margin: 40px 20px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 각 번역 항목 */
+.translation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.translation-item:last-child {
+  border-bottom: none;
+}
+
+.translation-item p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  flex: 1;
+  max-width: 80%;
+}
+
+/* 아이콘 영역 */
+.translation-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* GPT 스타일 복사 버튼 */
+.copy-button {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.copy-button:hover {
+  background-color: #f0f0f0;
+  border-color: #888;
+}
+
+.copy-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.translation-icons span {
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: inline-block; /* ← 클릭 가능한 영역 확장 */
+  transition: transform 0.2s ease;
+}
+
+.translation-icons span:hover {
+  transform: scale(1.2);
+}
